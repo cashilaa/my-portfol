@@ -1,45 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Sheila Wafula">
+    <meta name="description" content="Contact information about sheila wafula">
+    <title>Contact ME</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-   <div class="main">
-    <div class="navbar">       
-        <div class="menu">
+    <style>
+        
+    </style>
+    <header class="header">
+        <h1 class="header__h1">MATIVA MATRIX</h1>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <figure>
+            <img src="img/riccardo-cervia-qt82DHID50M-unsplash.jpg" alt="MY WEBSITE" title="READY TO JOIN ME"
+                width="1000" height="649">
+            <figcaption class="offscreen">
+                MY WEBSITE
+            </figcaption>
+        </figure>
+    </section>
+
+    <main class="main">
+        <article class="main__article">
+            <h2>My Location</h2>
+            <address>
+                333 KAMPALA Lane, Suite T<br>
+                NAIROBI KENYA, MO 0718497275
+                <br><br>
+                Phone: <a href="tel:+718497275">0718497275</a>
+            </address>
+        </article>
+        <hr>
+        <article class="main__article contact">
+            <h2 class="contact__h2">Our Contact Form</h2>
+
+            <form action="https://httpbin.org/get" method="get" class="contact__form">
+                <fieldset class="contact__fieldset">
+                    <legend class="offscreen">Send Us A Message</legend>
+                    <p class="contact__p">
+                        <label class="contact__label" for="name">Name:</label>
+                        <input class="contact__input" type="text" name="name" id="name" placeholder="your name"
+                            required>
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="email">Email:</label>
+                        <input class="contact__input" type="email" name="email" id="email" placeholder="your email"
+                            required>
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="message">Your Message:</label>
+                        <br>
+                        <textarea class="contact__textarea" name="message" id="message" cols="30" rows="10"
+                            placeholder="Type your message here"></textarea>
+                    </p>
+                </fieldset>
+                <button class="contact__button" type="submit">Send</button>
+                <button class="contact__button" type="reset">Reset</button>
+            </form>
+        </article>
+        <nav>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PROJECTS</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="about.html">about</a></li>
             </ul>
-        </div>
-
-        <div class="search">
-            <input class="srch" type="search" name="" placeholder="type to text" >
-            <a href="#"> <button class="btn">search</button></a>
-        </div>
-
-    </div>
-    <div class="content">
-        <h1>Hi THERE 😊</h1>
-        <p>Do you like coding?</p>
-        <a href="#"> <button class="btn">JOIN US</button></a>          
-
-    <div class="imag">
-      <img src="img/20210414-Wafula, Sheila 16-129.jpg" alt="Your Image">
-    </div>
-    <div class="menu">
-        <ul>
-            <li><a href="https://github.com/cashilaa/html.git">little taco shop</a></li>
-            <li><a href="https://github.com/cashilaa/css.git">advanced taco shop</a></li>
-        </ul>
-    </div>
-
-    </div>  
-   </div>
+        </nav>
+    </main>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+            <span class="nowrap">SHEILA WAFULA</span>
+        </p>
+    </footer>
 </body>
+
 </html>

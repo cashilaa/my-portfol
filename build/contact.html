@@ -4,78 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Sheila Wafula">
+    <meta name="description" content="Contact information about sheila wafula">
+    <title>Contact ME</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/#about">About <abbr title="Sheiila Wafula">SW</abbr></a>
-                </li>
-                <li>
-                    <a href="/#project">MY PROJECT</a>
-                </li>
-                <li>
-                    <a href="/#riseuplift">QUOTES</a>
-                </li>
-            </ul>
+    <style>
+        
+    </style>
+    <header class="header">
+        <h1 class="header__h1">MATIVA MATRIX</h1>
         </nav>
+    </header>
 
+    <section class="hero">
         <figure>
-            <img src="img/image.jpg" alt="Sheiila Wafula" title="Sheila Wafula"
-                width="400" height="260">
-            <figcaption>
-                sheila wafula
+            <img src="img/20210414-Wafula, Sheila 16-129.jpg" alt="MY WEBSITE" title="READY TO JOIN ME"
+                width="1000" height="649">
+            <figcaption class="offscreen">
+                MY WEBSITE
             </figcaption>
         </figure>
-    </header>
-    <hr>
-    <main>
-        <section>
-            <h2>My Contact Form</h2>
+    </section>
 
-            <form action="https://httpbin.org/get" method="get">
-                <fieldset>
-                    <legend>Send Us A Message</legend>
-                    <p>
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name" placeholder="your name" required>
+    <main class="main">
+        <article class="main__article">
+            <h2>My Location</h2>
+            <address>
+                333 KAMPALA Lane, Suite T<br>
+                NAIROBI KENYA, MO 0718497275
+                <br><br>
+                Phone: <a href="tel:+718497275">0718497275</a>
+            </address>
+        </article>
+        <hr>
+        <article class="main__article contact">
+            <h2 class="contact__h2">Our Contact Form</h2>
+
+            <form action="https://httpbin.org/get" method="get" class="contact__form">
+                <fieldset class="contact__fieldset">
+                    <legend class="offscreen">Send Us A Message</legend>
+                    <p class="contact__p">
+                        <label class="contact__label" for="name">Name:</label>
+                        <input class="contact__input" type="text" name="name" id="name" placeholder="your name"
+                            required>
                     </p>
-                    <p>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="your email" required>
+                    <p class="contact__p">
+                        <label class="contact__label" for="email">Email:</label>
+                        <input class="contact__input" type="email" name="email" id="email" placeholder="your email"
+                            required>
                     </p>
-                    <p>
-                        <label for="message">Your Message:</label>
+                    <p class="contact__p">
+                        <label class="contact__label" for="message">Your Message:</label>
                         <br>
-                        <textarea name="message" id="message" cols="30" rows="10"
+                        <textarea class="contact__textarea" name="message" id="message" cols="30" rows="10"
                             placeholder="Type your message here"></textarea>
                     </p>
                 </fieldset>
-                <button type="submit">Send</button>
-                <button type="reset">Reset</button>
+                <button class="contact__button" type="submit">Send</button>
+                <button class="contact__button" type="reset">Reset</button>
             </form>
-        </section>
-        <section>
-            <h2>Our Location</h2>
-            <address>
-                 Kenya, Nairobi<br>
-                Sheila City, NO 0798139277
-                <br><br>
-                Phone: <a href="tel:+798139277">0798139277</a>
-            </address>
-        </section>
+        </article>
+        <nav>
+            <ul>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </nav>
     </main>
-    <hr>
-    <footer>
-        <p>Copyright &copy; 2024 Sheila Wafula</p>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+            <span class="nowrap">SHEILA WAFULA</span>
+        </p>
     </footer>
 </body>
 
