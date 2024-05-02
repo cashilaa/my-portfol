@@ -5,25 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sheila Wafula">
-    <meta name="description" content="Projects that sheila wafula has done">
+    <meta name="description" content="Projects that Sheila Wafula has done">
     <title>My Projects</title>
-    <img src="image/icons8-hamburger-48.png" alt="favicon.icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+    </style>
 </head>
 
 <body>
-    <style>
-        
-    </style>
     <header class="header">
         <h1 class="header__h1">MATIVA MATRIX</h1>
-        </nav>
     </header>
 
     <section class="hero">
         <figure>
-            <img src="img/20240417 Sheila Wafula IMG_0029.jpg" alt="MY WEBSITE" title="READY TO JOIN ME"
-                width="900" height="640">
+            <img src="img/20240417 Sheila Wafula IMG_0029.jpg" alt="MY WEBSITE" title="READY TO JOIN ME">
             <figcaption class="offscreen">
                 MY WEBSITE
             </figcaption>
@@ -32,20 +29,26 @@
             WELCOME TO MY PROJECTS 🚀
         </p>
     </section>
-        <nav>
-            <ul>
-                <li><a href="https://github.com/cashilaa/html.git">The little Taco Shop</a></li>
-                <li><a href="https://github.com/cashilaa/css.git">Advanced Taco Shop</a></li>
-                <li><a href="about.html">about</a></li>
-            </ul>
-        </nav>
-    </main>
+
+    <nav>
+        <ul>
+            <li><a href="https://github.com/cashilaa/html.git">The little Taco Shop</a></li>
+            <li><a href="https://github.com/cashilaa/css.git">Advanced Taco Shop</a></li>
+            <li><a href="index.html">Back to main page</a></li>
+        </ul>
+    </nav>
+
     <footer class="footer">
         <p>
             <span class="nowrap">Copyright &copy; <time id="year"></time></span>
             <span class="nowrap">SHEILA WAFULA</span>
         </p>
     </footer>
+
+    <script>
+        // JavaScript to dynamically set the current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
