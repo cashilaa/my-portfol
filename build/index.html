@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="./style.css">
+    <style>
+    
+    </style>
 </head>
+
 <body>
-   <div class="main">
-    <div class="navbar">       
-        <div class="menu">
-            <ul>
+    <div class="main">
+        <div class="navbar">
+            <ul class="menu">
                 <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="project.html">PROJECTS</a></li>
             </ul>
         </div>
+        <div class="content">
+            <h1>Hi THERE 😊</h1>
+            <p>Do you like coding?</p>
 
-        <div class="search">
-            <input class="srch" type="search" name="" placeholder="type to text" >
-            <a href="#"> <button class="btn">search</button></a>
+            <div>
+                <img src="img/20240417 Sheila Wafula IMG_0029.jpg" alt="Your Image" class="img">
+            </div>
+
         </div>
-
     </div>
-    <div class="content">
-        <h1>Hi THERE 😊</h1>
-        <p>Do you like coding?</p>
-        <a href="#"> <button class="btn">JOIN US</button></a>          
+    <br><br>
+    <hr>
+    <footer class="footer">
 
-    <div class="imag">
-      <img src="img/20240417 Sheila Wafula IMG_0029.jpg" alt="Your Image">
-    </div>
+        <p>
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+            <span class="nowrap">SHEILA WAFULA</span>
+            <a href="#">back to top</a>
+        </p>
+    </footer>
 
-    </div>  
-   </div>
+    <script>
+        // JavaScript to dynamically set the current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
